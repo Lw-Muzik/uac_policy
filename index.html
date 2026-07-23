@@ -1,1 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — UAC App | Uganda AIDS Commission</title>
+  <meta name="description" content="Privacy Policy for the UAC mobile application by the Uganda AIDS Commission." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #0d5fac;
+      --primary-dark: #0a4a86;
+      --primary-light: #e8f1fa;
+      --ink: #1c2733;
+      --muted: #5a6b7d;
+      --border: #dde6ee;
+      --bg: #f7fafc;
+      --card: #ffffff;
+      --accent: #d92d20;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.7;
+      font-size: 16px;
+    }
 
+    /* ---------- Header ---------- */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #1573c9 100%);
+      color: #fff;
+      padding: 56px 24px 48px;
+    }
+    .hero-inner { max-width: 820px; margin: 0 auto; }
+    .hero .org {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      padding: 6px 16px;
+      margin-bottom: 20px;
+    }
+    .hero h1 { font-size: clamp(30px, 5vw, 42px); font-weight: 800; line-height: 1.2; }
+    .hero p.sub { margin-top: 14px; font-size: 17px; max-width: 620px; color: rgba(255, 255, 255, 0.92); }
+    .hero .meta { margin-top: 22px; font-size: 14px; color: rgba(255, 255, 255, 0.85); }
+    .hero .meta strong { color: #fff; }
+
+    /* ---------- Layout ---------- */
+    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px 80px; }
+
+    /* ---------- Summary cards ---------- */
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+      margin: -28px 0 44px;
+    }
+    .summary .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 18px;
+      box-shadow: 0 4px 18px rgba(13, 95, 172, 0.07);
+    }
+    .summary .card .icon { font-size: 24px; margin-bottom: 8px; display: block; }
+    .summary .card h3 { font-size: 15px; font-weight: 700; color: var(--primary-dark); margin-bottom: 4px; }
+    .summary .card p { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+
+    /* ---------- Sections ---------- */
+    section { margin-top: 44px; }
+    section h2 {
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--primary-light);
+      margin-bottom: 16px;
+    }
+    section h2 .num { color: var(--primary); opacity: 0.55; margin-right: 8px; }
+    section p { margin-bottom: 12px; }
+    section ul { margin: 10px 0 14px 22px; }
+    section li { margin-bottom: 8px; }
+    section li strong { color: var(--primary-dark); }
+    .note {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      font-size: 14.5px;
+      margin: 16px 0;
+    }
+    a { color: var(--primary); font-weight: 600; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- Table ---------- */
+    .tbl-scroll { overflow-x: auto; margin: 16px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 520px; }
+    th {
+      text-align: left;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+      padding: 10px 14px;
+    }
+    th:first-child { border-radius: 10px 0 0 0; }
+    th:last-child { border-radius: 0 10px 0 0; }
+    td { padding: 10px 14px; border-bottom: 1px solid var(--border); background: var(--card); vertical-align: top; }
+    tr:last-child td:first-child { border-radius: 0 0 0 10px; }
+    tr:last-child td:last-child { border-radius: 0 0 10px 0; }
+
+    /* ---------- Contact block ---------- */
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px 28px;
+      margin-top: 18px;
+      box-shadow: 0 4px 18px rgba(13, 95, 172, 0.07);
+    }
+    .contact-card h3 { color: var(--primary-dark); font-size: 17px; margin-bottom: 10px; }
+    .contact-card p { margin-bottom: 6px; font-size: 15px; }
+
+    /* ---------- Footer ---------- */
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 60px;
+      padding: 26px 24px 40px;
+      text-align: center;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+
+    @media print {
+      .hero { background: var(--primary); -webkit-print-color-adjust: exact; }
+      .summary .card, .contact-card { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="org">Uganda AIDS Commission</span>
+      <h1>Privacy Policy — UAC App</h1>
+      <p class="sub">
+        The UAC App provides HIV/AIDS awareness, prevention tips, epidemiological
+        statistics, news and educational content to the public. This policy explains,
+        in plain language, what data the app does — and does not — handle.
+      </p>
+      <p class="meta"><strong>Effective date:</strong> 23 July 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 23 July 2026</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ======== At-a-glance summary ======== -->
+    <div class="summary">
+      <div class="card">
+        <span class="icon">🚫</span>
+        <h3>No account required</h3>
+        <p>The app has no sign-up, login or user profiles. You browse anonymously.</p>
+      </div>
+      <div class="card">
+        <span class="icon">📊</span>
+        <h3>No tracking or ads</h3>
+        <p>We use no analytics, advertising or tracking SDKs of any kind.</p>
+      </div>
+      <div class="card">
+        <span class="icon">📱</span>
+        <h3>Minimal permissions</h3>
+        <p>Only internet access. No camera, location, contacts or microphone.</p>
+      </div>
+      <div class="card">
+        <span class="icon">🛡️</span>
+        <h3>Data stays on your device</h3>
+        <p>Preferences and cached content are stored locally and never uploaded.</p>
+      </div>
+    </div>
+
+    <!-- ======== 1 ======== -->
+    <section id="who-we-are">
+      <h2><span class="num">1.</span>Who We Are</h2>
+      <p>
+        The UAC App (“the App”) is the official mobile application of the
+        <strong>Uganda AIDS Commission (“UAC”, “we”, “us”, “our”)</strong>, a statutory
+        body of the Government of Uganda established to coordinate the national
+        response to HIV and AIDS. The App delivers public-health information,
+        including HIV prevention guidance, national and regional statistics, news,
+        frequently asked questions, stories and educational videos.
+      </p>
+      <p>
+        We are committed to protecting your privacy in accordance with the
+        <strong>Data Protection and Privacy Act, 2019 (Uganda)</strong> and the
+        Data Protection and Privacy Regulations, 2021.
+      </p>
+    </section>
+
+    <!-- ======== 2 ======== -->
+    <section id="data-we-do-not-collect">
+      <h2><span class="num">2.</span>Information We Do <u>Not</u> Collect</h2>
+      <p>The App is designed to work without collecting personal information. Specifically, the App does <strong>not</strong>:</p>
+      <ul>
+        <li>Require or offer account registration, sign-in, or user profiles;</li>
+        <li>Ask for your name, email address, phone number, or any contact details;</li>
+        <li>Collect health information about you — the App only <em>displays</em> public-health content; it never asks about your HIV status or any medical condition;</li>
+        <li>Access your location, contacts, camera, microphone, photos, or files;</li>
+        <li>Use analytics, advertising, or behavioural-tracking services;</li>
+        <li>Display advertisements of any kind.</li>
+      </ul>
+      <div class="note">
+        <strong>Important:</strong> Because the App requires no account and asks no personal
+        questions, using it does not reveal your HIV status or health interests to us.
+        Reading content in the App is anonymous.
+      </div>
+    </section>
+
+    <!-- ======== 3 ======== -->
+    <section id="data-processed">
+      <h2><span class="num">3.</span>Information Processed Automatically</h2>
+      <p>
+        Like any internet-connected application, a limited amount of technical data is
+        processed so the App can function:
+      </p>
+      <div class="tbl-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Where it is processed</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>IP address &amp; standard request data</strong> (device type, request time)</td>
+              <td>Our content server, when the App fetches articles, statistics or images</td>
+              <td>Delivering content to your device; routine server operation and security logs</td>
+            </tr>
+            <tr>
+              <td><strong>App preferences</strong> (e.g. whether you have completed onboarding)</td>
+              <td>Stored locally on your device only</td>
+              <td>Remembering your app setup between launches</td>
+            </tr>
+            <tr>
+              <td><strong>Cached content</strong> (images, PDF documents)</td>
+              <td>Stored locally on your device only</td>
+              <td>Faster loading and reduced data usage</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Server logs are used solely for operating, securing and maintaining the service.
+        They are not used to identify or profile individual users, are not shared for
+        marketing, and are routinely deleted in the ordinary course of server administration.
+        Locally stored data never leaves your device and is removed when you clear the
+        App's storage or uninstall the App.
+      </p>
+    </section>
+
+    <!-- ======== 4 ======== -->
+    <section id="third-parties">
+      <h2><span class="num">4.</span>Third-Party Services &amp; External Links</h2>
+      <p>Some features of the App rely on third-party services that may process limited technical data under their own privacy policies:</p>
+      <ul>
+        <li>
+          <strong>YouTube video player</strong> — educational videos in the App are streamed
+          through YouTube's embedded player. When you play a video, YouTube (Google LLC) may
+          collect data as described in the
+          <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.
+          No video data is collected until you choose to play a video.
+        </li>
+        <li>
+          <strong>Google Fonts</strong> — the App's typeface may be retrieved from Google's
+          font service, which involves a standard web request from your device.
+        </li>
+        <li>
+          <strong>External links</strong> — the “Get in Touch” section can open your device's
+          email, phone dialler, browser or social-media apps (for example, to email or call
+          UAC). Anything you send through those apps is governed by those apps and is composed
+          entirely by you — the App itself transmits nothing on your behalf.
+        </li>
+        <li>
+          <strong>Sharing</strong> — if you use the share feature, content is passed to the app
+          you choose (e.g. WhatsApp) via your device's standard share function.
+        </li>
+      </ul>
+      <p>We encourage you to review the privacy policies of any third-party service or website you access through the App.</p>
+    </section>
+
+    <!-- ======== 5 ======== -->
+    <section id="contacting-us">
+      <h2><span class="num">5.</span>When You Contact Us</h2>
+      <p>
+        If you voluntarily contact UAC using the email address or telephone numbers shown in
+        the App, we will receive the information you choose to provide (such as your email
+        address and the content of your message). We use it only to respond to your enquiry
+        and handle it in accordance with the Data Protection and Privacy Act, 2019.
+      </p>
+    </section>
+
+    <!-- ======== 6 ======== -->
+    <section id="security">
+      <h2><span class="num">6.</span>Data Security</h2>
+      <p>
+        We apply appropriate technical and organisational measures to protect the systems that
+        serve the App's content. Because the App collects no personal information, the risk to
+        your personal data from using the App is inherently minimal. No method of internet
+        transmission is 100% secure, but we work to safeguard our infrastructure against
+        unauthorised access, alteration and destruction.
+      </p>
+    </section>
+
+    <!-- ======== 7 ======== -->
+    <section id="children">
+      <h2><span class="num">7.</span>Children's Privacy</h2>
+      <p>
+        The App provides age-appropriate public-health education and is suitable for a general
+        audience, including young people. We do not knowingly collect personal information from
+        anyone, including children. Since the App has no registration, forms or data-entry
+        features, children cannot submit personal data through it. If you are a parent or
+        guardian with concerns, please contact us using the details below.
+      </p>
+    </section>
+
+    <!-- ======== 8 ======== -->
+    <section id="your-rights">
+      <h2><span class="num">8.</span>Your Rights</h2>
+      <p>Under the Data Protection and Privacy Act, 2019, you have the right to:</p>
+      <ul>
+        <li>Be informed about how your personal data is used;</li>
+        <li>Access any personal data we hold about you (for App users, this is normally none);</li>
+        <li>Request correction or deletion of personal data (for example, correspondence you have sent us);</li>
+        <li>Object to processing of your personal data;</li>
+        <li>Lodge a complaint with the <strong>Personal Data Protection Office (PDPO)</strong> of Uganda — <a href="https://www.pdpo.go.ug" rel="noopener">www.pdpo.go.ug</a>.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us using the details in Section&nbsp;11.</p>
+    </section>
+
+    <!-- ======== 9 ======== -->
+    <section id="retention">
+      <h2><span class="num">9.</span>Data Retention</h2>
+      <ul>
+        <li><strong>On your device:</strong> preferences and cached content remain until you clear the App's data or uninstall it — deletion is entirely in your control.</li>
+        <li><strong>Server logs:</strong> retained only as long as needed for operations and security, then deleted.</li>
+        <li><strong>Correspondence:</strong> messages you send to UAC are kept only as long as necessary to handle your enquiry and meet legal record-keeping obligations.</li>
+      </ul>
+    </section>
+
+    <!-- ======== 10 ======== -->
+    <section id="changes">
+      <h2><span class="num">10.</span>Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time — for example, if new features are
+        added to the App. The “Last updated” date at the top of this page will always reflect
+        the current version. If a future update introduces features that collect personal data,
+        we will update this policy before those features launch and, where required, seek your
+        consent.
+      </p>
+    </section>
+
+    <!-- ======== 11 ======== -->
+    <section id="contact">
+      <h2><span class="num">11.</span>Contact Us</h2>
+      <p>If you have questions about this Privacy Policy or how the App works, please reach us at:</p>
+      <div class="contact-card">
+        <h3>Uganda AIDS Commission</h3>
+        <p>Plot 1–3 Salim Bey Road, Ntinda</p>
+        <p>P.O. Box 10779, Kampala, Uganda</p>
+        <p>Email: <a href="mailto:uac@uac.go.ug">uac@uac.go.ug</a></p>
+        <p>Website: <a href="https://uac.go.ug" rel="noopener">uac.go.ug</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Uganda AIDS Commission. All rights reserved.<br />
+    This Privacy Policy applies to the UAC mobile application for Android and iOS.
+  </footer>
+
+</body>
+</html>
